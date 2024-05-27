@@ -1,0 +1,30 @@
+{
+  "name": "whatsapp-api",
+  "version": "1.0.0",
+  "description": "API REST para enviar mensajes de WhatsApp",
+  "main": "dist/index.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "node dist/index.mjs",
+    "dev": "nodemon src/index.mjs",
+    "build": "babel src -d dist"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "path": "^0.12.7",
+    "puppeteer": "^13.0.0",
+    "qr-image": "^3.2.0",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.14.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "@babel/core": "^7.14.6",
+    "@babel/cli": "^7.14.5",
+    "@babel/preset-env": "^7.14.5"
+  }
+}
